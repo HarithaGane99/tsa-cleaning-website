@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Home, Building, ShieldCheck, Waves, Sun, Star } from 'lucide-react';
 import Button from '../ui/Button';
 
@@ -52,8 +53,8 @@ const AllServices = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-16">
           {servicesList.map((service, index) => (
-            <div key={service.title} className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${index % 2 !== 0 ? 'lg:grid-flow-col-dense' : ''}`}>
-              <div className={index % 2 !== 0 ? 'lg:col-start-2' : ''}>
+            <div key={service.title} className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center`}>
+              <div className={index % 2 !== 0 ? 'lg:order-2' : ''}>
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full bg-blue-100">
                     {service.icon}
@@ -64,20 +65,22 @@ const AllServices = () => {
                 <ul className="mt-6 space-y-2">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center">
-                      <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                      <svg className="h-5 w-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                       <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <div className="mt-6">
-                  <Button>Book This Service</Button>
+                  <Button href="/contact">Book This Service</Button>
                 </div>
               </div>
-              <div className={`mt-10 lg:mt-0 ${index % 2 !== 0 ? 'lg:col-start-1' : ''}`}>
-                <img 
+              <div className={`mt-10 lg:mt-0 ${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
+                <Image 
                   src={service.image} 
                   alt={`${service.title} service`} 
-                  className="rounded-2xl shadow-xl object-cover w-full h-full"
+                  width={600}
+                  height={400}
+                  className="rounded-2xl shadow-xl object-cover w-full h-auto"
                 />
               </div>
             </div>
@@ -89,3 +92,4 @@ const AllServices = () => {
 };
 
 export default AllServices;
+
