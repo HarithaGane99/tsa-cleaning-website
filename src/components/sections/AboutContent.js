@@ -42,7 +42,7 @@ const AboutContent = () => {
           </div>
           <div>
             <Image
-              src="/images/team.jpg"
+              src="/images/cleaners.jpg"
               width={612}
               height={408}
               className="rounded-2xl shadow-xl object-cover w-full h-full"
