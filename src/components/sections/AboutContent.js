@@ -65,7 +65,7 @@ const AboutContent = () => {
                 {values.map((value) => (
                     <div key={value.title} className="text-center p-6 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
                         <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mb-6 mx-auto">
-                           {value.icon}
+                            {value.icon}
                         </div>
                         <h3 className="text-xl font-bold text-gray-900">{value.title}</h3>
                         <p className="mt-2 text-gray-600">{value.description}</p>
