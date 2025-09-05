@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Award, Users, Smile, Leaf } from 'lucide-react';
 
 const values = [
@@ -23,6 +24,7 @@ const values = [
     },
 ];
 
+
 const AboutContent = () => {
   return (
     <section className="py-16 sm:py-24 bg-white">
@@ -32,17 +34,19 @@ const AboutContent = () => {
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Story</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Founded in the heart of Sydney, TSA Cleaning Services started with a simple mission: to provide a reliable, high-quality cleaning service that busy Sydneysiders could trust. We saw a need for a professional service that didn't just clean, but cared for the spaces where people live and work.
+              Founded in the heart of Sydney, TSA Cleaning Services started with a simple mission: to provide a reliable, high-quality cleaning service that busy Sydneysiders could trust. We saw a need for a professional service that didn&apos;t just clean, but cared for the spaces where people live and work.
             </p>
             <p className="mt-4 text-gray-600">
-              From our first residential clean to servicing large commercial offices, our commitment to excellence has never wavered. We believe a clean environment is a healthy and productive one, and we're passionate about creating those spaces for our clients across NSW.
+              From our first residential clean to servicing large commercial offices, our commitment to excellence has never wavered. We believe a clean environment is a healthy and productive one, and we&apos;re passionate about creating those spaces for our clients across NSW.
             </p>
           </div>
           <div>
-            <img 
-              src="https://media.istockphoto.com/id/1417833217/photo/happy-woman-leading-a-group-of-professional-cleaners.jpg?s=612x612&w=0&k=20&c=puIhMDNxS9-8WrpR8xJ2Cl3Q1wEbbs4UAp-_96m9-xo=" 
-              alt="TSA Cleaning team" 
-              className="rounded-2xl shadow-xl object-cover w-full"
+            <Image
+              src="https://media.istockphoto.com/id/1417833217/photo/happy-woman-leading-a-group-of-professional-cleaners.jpg?s=612x612&w=0&k=20&c=puIhMDNxS9-8WrpR8xJ2Cl3Q1wEbbs4UAp-_96m9-xo="
+              alt="TSA Cleaning team"
+              width={612}
+              height={408}
+              className="rounded-2xl shadow-xl object-cover w-full h-full"
             />
           </div>
         </div>
@@ -76,3 +80,4 @@ const AboutContent = () => {
 };
 
 export default AboutContent;
+
