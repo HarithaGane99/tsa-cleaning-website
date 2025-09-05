@@ -1,49 +1,47 @@
 const testimonials = [
-  {
-    quote: "TSA Cleaning did an incredible job! Our office has never looked better. The team was professional, punctual, and very thorough. Highly recommend!",
-    name: 'Sarah J.',
-    role: 'Office Manager, Sydney CBD',
-  },
-  {
-    quote: "The end of lease clean was perfect. We got our full bond back without any issues. The attention to detail was amazing. Thank you, TSA!",
-    name: 'Michael B.',
-    role: 'Renter, Parramatta',
-  },
-  {
-    quote: "I use their residential cleaning service every fortnight and it's been a lifesaver. Coming home to a sparkling clean house is the best feeling.",
-    name: 'Emily R.',
-    role: 'Homeowner, Bondi',
-  },
-];
-
-const Testimonials = () => {
-  return (
-    <section className="py-16 sm:py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            What Our Clients Say
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            We're proud to have happy clients across Sydney.
-          </p>
+    {
+      quote: "TSA Cleaning transformed our office. The attention to detail was incredible, and the team was so professional. It&apos;s never looked better!",
+      author: "Sarah J.",
+      company: "Sydney Startup Hub"
+    },
+    {
+      quote: "I was moving out and stressed about getting my bond back. TSA&apos;s end-of-lease cleaning was a lifesaver. The place was spotless, and I got my full bond back without any issues.",
+      author: "Michael B.",
+      company: "Residential Client"
+    },
+    {
+      quote: "Reliable, efficient, and friendly. We use their weekly residential service and it&apos;s made a huge difference to our busy family life. Highly recommend!",
+      author: "Emily R.",
+      company: "Homeowner, Surry Hills"
+    }
+  ];
+  
+  const Testimonials = () => {
+    return (
+      <section className="bg-slate-100 py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900">What Our Clients Say</h2>
+            <p className="mt-4 text-lg text-gray-600">
+              We&apos;re proud to deliver a service that our customers love.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 lg:grid-cols-3">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-md">
+                <p className="text-gray-600 italic">&quot;{testimonial.quote}&quot;</p>
+                <div className="mt-6">
+                  <p className="font-semibold text-gray-900">{testimonial.author}</p>
+                  <p className="text-sm text-gray-500">{testimonial.company}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="mt-12 grid gap-8 lg:grid-cols-3">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-              <blockquote className="text-gray-700 italic">
-                “{testimonial.quote}”
-              </blockquote>
-              <figcaption className="mt-6">
-                <div className="font-bold text-gray-900">{testimonial.name}</div>
-                <div className="text-gray-600">{testimonial.role}</div>
-              </figcaption>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+      </section>
+    );
+  };
+  
+  export default Testimonials;
 
-export default Testimonials;
+

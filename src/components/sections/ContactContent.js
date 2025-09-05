@@ -23,6 +23,7 @@ const ContactContent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Submitted:', formData);
+    // In a real app, you would send this data to an API endpoint
     alert('Thank you for your message! We will get back to you shortly.');
     setFormData({ name: '', email: '', phone: '', service: '', message: '' });
   };
@@ -107,7 +108,7 @@ const ContactContent = () => {
         <div className="bg-white p-8 md:p-10 rounded-lg shadow-lg space-y-8">
             <h3 className="text-2xl font-bold text-gray-900">Contact Information</h3>
             <p className="text-gray-600">
-              Have a question or need to speak with us directly? We're here to help. Reach out via phone, email, or visit us at our Sydney office.
+              Have a question or need to speak with us directly? We&apos;re here to help. Reach out via phone, email, or visit us at our Sydney office.
             </p>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-center">
@@ -141,6 +142,7 @@ const ContactContent = () => {
 };
 
 export default ContactContent;
+
 
 
 
