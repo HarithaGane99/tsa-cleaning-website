@@ -42,7 +42,7 @@ const AboutContent = () => {
           </div>
           <div>
             <Image
-              src="/images/cleaners.jpg"
+              src="https://images.unsplash.com/photo-1583947581924-860bda6a26df?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               width={612}
               height={408}
               className="rounded-2xl shadow-xl object-cover w-full h-full"
