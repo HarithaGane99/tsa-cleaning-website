@@ -8,42 +8,42 @@ const servicesList = [
     title: 'Residential Cleaning',
     description: 'Our standard residential cleaning will keep your home consistently clean and comfortable. We handle the dusting, vacuuming, and tidying up so you can relax.',
     features: ['Dusting all surfaces', 'Vacuuming carpets and rugs', 'Mopping floors', 'Cleaning bathrooms & kitchens'],
-    image: 'https://images.surferseo.art/0c84845b-bd8c-43fc-acf8-e6d3e0c579f8.jpeg'
+    image: '/images/clean-home.jpeg'
   },
   {
     icon: <Building size={32} className="text-blue-600" />,
     title: 'Commercial Cleaning',
     description: 'A clean, sanitized office is essential for a healthy and productive work environment. We offer flexible cleaning schedules to suit your business needs.',
     features: ['Office and cubicle cleaning', 'Restroom sanitization', 'Trash removal', 'Common area cleaning'],
-    image: 'https://officebanao.com/wp-content/uploads/2022/10/Modern-office-design-3.jpg'
+    image: '/images/office.jpg'
   },
   {
     icon: <ShieldCheck size={32} className="text-blue-600" />,
     title: 'End of Lease Cleaning',
     description: 'Our comprehensive end-of-lease cleaning is designed to help you get your bond back. We follow a detailed checklist approved by real estate agents.',
     features: ['Deep cleaning of all rooms', 'Oven and stovetop cleaning', 'Wall and window cleaning', 'Carpet steam cleaning available'],
-    image: 'https://media.istockphoto.com/id/668666814/photo/interior-of-a-modern-apartment-empty-room.jpg?s=612x612&w=0&k=20&c=E-hk-sbXVGs3LrGY4KDWjaR6vhfvt_hGxSoZOh02ewY='
+    image: '/images/empty-apt.jpg'
   },
   {
     icon: <Waves size={32} className="text-blue-600" />,
     title: 'Carpet Steam Cleaning',
     description: 'Revitalize your carpets with our professional steam cleaning service. We remove deep-seated dirt, stains, and allergens, leaving carpets fresh and clean.',
     features: ['Pre-treatment for stains', 'Hot water extraction method', 'Removes allergens and bacteria', 'Quick drying times'],
-    image: 'https://www.sgcarpet.com/wp-content/uploads/2025/04/sg-carpet-cleaning-3.jpg'
+    image: '/images/carpet.webp'
   },
   {
     icon: <Sun size={32} className="text-blue-600" />,
     title: 'Window Cleaning',
     description: 'Let the sunshine in with our streak-free window cleaning service. We clean interior and exterior windows, frames, and sills for a crystal-clear view.',
     features: ['Interior & exterior cleaning', 'Streak-free finish', 'Frames and sills wiped down', 'Safe for all window types'],
-    image: 'https://www.talentedladiesclub.com/site/wp-content/uploads/An-ultimate-guide-to-achieving-sparkling-windows-in-commercial-building-1.jpg'
+    image: '/images/window.jpg'
   },
   {
     icon: <Star size={32} className="text-blue-600" />,
     title: 'Deep Cleaning',
     description: 'Our deep cleaning service is perfect for a seasonal refresh or preparing for a special event. We go beyond the surface to eliminate grime and buildup.',
     features: ['Detailed scrubbing of bathrooms', 'Kitchen appliance deep clean', 'Baseboard and door frame washing', 'Light fixture cleaning'],
-    image: 'https://www.thecleaninggurus.co.uk/wp-content/uploads/2023/11/cleaning-services.jpg'
+    image: '/images/deep-clean.jpg'
   },
 ];
 

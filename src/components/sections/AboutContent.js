@@ -42,11 +42,11 @@ const AboutContent = () => {
           </div>
           <div>
             <Image
-              src="https://media.istockphoto.com/id/1417833217/photo/happy-woman-leading-a-group-of-professional-cleaners.jpg?s=612x612&w=0&k=20&c=puIhMDNxS9-8WrpR8xJ2Cl3Q1wEbbs4UAp-_96m9-xo="
-              alt="TSA Cleaning team"
+              src="/images/team.jpg"
               width={612}
               height={408}
               className="rounded-2xl shadow-xl object-cover w-full h-full"
+              alt="TSA Cleaning Services Team"
             />
           </div>
         </div>
