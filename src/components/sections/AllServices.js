@@ -8,42 +8,54 @@ const servicesList = [
     title: 'Residential Cleaning',
     description: 'Our standard residential cleaning will keep your home consistently clean and comfortable. We handle the dusting, vacuuming, and tidying up so you can relax.',
     features: ['Dusting all surfaces', 'Vacuuming carpets and rugs', 'Mopping floors', 'Cleaning bathrooms & kitchens'],
-    image: '/images/clean-home.jpeg'
+    image: '/images/home.jpg',
+    width: 557, 
+    height: 363 
   },
   {
     icon: <Building size={32} className="text-blue-600" />,
     title: 'Commercial Cleaning',
     description: 'A clean, sanitized office is essential for a healthy and productive work environment. We offer flexible cleaning schedules to suit your business needs.',
     features: ['Office and cubicle cleaning', 'Restroom sanitization', 'Trash removal', 'Common area cleaning'],
-    image: '/images/office.jpg'
+    image: '/images/office.jpg',
+    width: 1366, 
+    height: 768 
   },
   {
     icon: <ShieldCheck size={32} className="text-blue-600" />,
     title: 'End of Lease Cleaning',
     description: 'Our comprehensive end-of-lease cleaning is designed to help you get your bond back. We follow a detailed checklist approved by real estate agents.',
     features: ['Deep cleaning of all rooms', 'Oven and stovetop cleaning', 'Wall and window cleaning', 'Carpet steam cleaning available'],
-    image: '/images/empty-apt.jpg'
+    image: '/images/empty-apt.jpg',
+    width: 612, 
+    height: 408 
   },
   {
     icon: <Waves size={32} className="text-blue-600" />,
     title: 'Carpet Steam Cleaning',
     description: 'Revitalize your carpets with our professional steam cleaning service. We remove deep-seated dirt, stains, and allergens, leaving carpets fresh and clean.',
     features: ['Pre-treatment for stains', 'Hot water extraction method', 'Removes allergens and bacteria', 'Quick drying times'],
-    image: '/images/carpet.webp'
+    image: '/images/carpet.webp',
+    width: 1620, 
+    height: 1080 
   },
   {
     icon: <Sun size={32} className="text-blue-600" />,
     title: 'Window Cleaning',
     description: 'Let the sunshine in with our streak-free window cleaning service. We clean interior and exterior windows, frames, and sills for a crystal-clear view.',
     features: ['Interior & exterior cleaning', 'Streak-free finish', 'Frames and sills wiped down', 'Safe for all window types'],
-    image: '/images/window.jpg'
+    image: '/images/window.jpg',
+    width: 1000,
+    height: 667 
   },
   {
     icon: <Star size={32} className="text-blue-600" />,
     title: 'Deep Cleaning',
     description: 'Our deep cleaning service is perfect for a seasonal refresh or preparing for a special event. We go beyond the surface to eliminate grime and buildup.',
     features: ['Detailed scrubbing of bathrooms', 'Kitchen appliance deep clean', 'Baseboard and door frame washing', 'Light fixture cleaning'],
-    image: '/images/deep-clean.jpg'
+    image: '/images/deep-clean.jpg',
+    width: 1200, 
+    height: 801 
   },
 ];
 
@@ -78,8 +90,8 @@ const AllServices = () => {
                 <Image 
                   src={service.image} 
                   alt={`${service.title} service`} 
-                  width={600}
-                  height={400}
+                  width={service.width}
+                  height={service.height}
                   className="rounded-2xl shadow-xl object-cover w-full h-auto"
                 />
               </div>
@@ -92,4 +104,6 @@ const AllServices = () => {
 };
 
 export default AllServices;
+
+
 
